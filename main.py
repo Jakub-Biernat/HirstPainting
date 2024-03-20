@@ -21,12 +21,12 @@ my_screen.colormode(255)
 def hirst_painting():
     my_turtle.penup()
     my_turtle.speed(0)
-    my_turtle.setposition(-300, -300)
+    my_turtle.setposition(-250, -250)
     starting_position = list(my_turtle.position())
     for _ in range(10):
         starting_position[1] += 50
         my_turtle.setposition(starting_position)
-        for dot in range(10):
+        for _ in range(10):
             my_turtle.dot(20, random.choice(color_list))
             my_turtle.forward(50)
     my_turtle.hideturtle()
